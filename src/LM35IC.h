@@ -14,7 +14,7 @@ namespace LM35{
     // Define sensors type.
     enum sensors{LM35, LM35A, LM35CA, LM35C, LM35D=0};
 
-    class LM35IC {
+    class LM35IC{
 
         // Define private attributes.
         private:
