@@ -5,6 +5,7 @@
 
 namespace LM35{
 
+    constexpr uint8_t base = 2;
     constexpr uint8_t n_sensors = 5;
     constexpr uint8_t n_details = 8;
 
@@ -22,7 +23,7 @@ namespace LM35{
             uint8_t _pin;
             units _unit;
             sensors _sensor;
-            double _sensor_sensitivity;
+            double _sensitivity;
             double _sensors[n_sensors][n_details] = {{0.0, 100.0, 0.012, 0.6, 0.004, 0.02, 1.5, 0.0067},
                                                     {-55.0, 150.0, 0.005, 0.4, 0.0032, 0.00625, 1.0, 0.004},
                                                     {-55.0, 150.0, 0.0025, 0.2, 0.0016, 0.00625, 0.5, 0.004},
