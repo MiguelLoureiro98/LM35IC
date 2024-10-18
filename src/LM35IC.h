@@ -33,11 +33,11 @@ namespace LM35{
         private:
 
             uint8_t _pin;
-            units _unit;
             sensors _sensor;
-            uint8_t _adc_res;
-            double _gain;
-            double _offset;
+            units _unit;
+            double _adc_res;
+            double _gain = 1.0;
+            double _offset = 0.0;
             static constexpr double _sensitivity = 0.01;
             static constexpr double _reference_temperature = 25.0;
             static constexpr double _adc_accuracy = 2.0;
