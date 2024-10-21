@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map LM35IC
+#######################################
+
+#######################################
+# Data types (KEYWORD1)
+#######################################
+
+LM35IC  KEYWORD1
+
+#######################################
+# Methods and functions (KEYWORD2)
+#######################################
+
+readTemp    KEYWORD2
+computeError    KEYWORD2
+getResolution   KEYWORD2
+computeAccuracy KEYWORD2
+Celsius2Kelvin  KEYWORD2
+Celsius2Fahrenheit  KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
