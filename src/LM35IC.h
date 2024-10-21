@@ -5,9 +5,6 @@
 
 namespace LM35{
 
-    // Define units type.
-    enum units{Celsius=0, Kelvin, Fahrenheit};
-
     // Define sensors type.
     enum sensors{LM35, LM35A, LM35CA, LM35C, LM35D=0};
 
@@ -16,28 +13,27 @@ namespace LM35{
         // Define public methods.
         public:
 
-            LM35IC(uint8_t pin, sensors sensor=LM35D, units unit=Celsius, double Vcc=5.0, uint8_t ADC_bits=10);
-            double readTemp();
-            double error(double temperature, bool worst_case=false);
-            void changeUnits(units unit);
+            LM35IC(uint8_t pin, sensors sensor=LM35D, double gain=1.0, double offset=0.0, double Vcc=5.0, uint8_t ADC_bits=10);
+            double readTemp() const;
+            double computeError(double temperature, bool worst_case=false) const;
+            double getResolution() const;
+            double computeAccuracy(double temperature, bool worst_case=false) const;
+            static double Celsius2Kelvin(double temperature_Celsius);
+            static double Celsius2Fahrenheit(double temperature_Celsius);
 
         // Define private methods.
         private:
 
-            double _computeResolution();
-            double _computeAccuracy(double temperature, bool worst_case);
-            double _Celsius2Kelvin(double temperature_Celsius);
-            double _Celsius2Fahrenheit(double temperature_Celsius);
+            double _computeResolution() const;
 
         // Define private attributes.
         private:
 
             uint8_t _pin;
             sensors _sensor;
-            units _unit;
+            double _gain;
+            double _offset;
             double _adc_res;
-            double _gain = 1.0;
-            double _offset = 0.0;
             static constexpr double _sensitivity = 0.01;
             static constexpr double _reference_temperature = 25.0;
             static constexpr double _adc_accuracy = 2.0;
@@ -50,7 +46,7 @@ namespace LM35{
                                                                         {-40.0, 110.0, 0.006154, 0.4, 0.004706, 0.0154, 1.0, 0.005882}};
             static constexpr uint8_t _slope_indices[4] = {2, 4, 5, 7};
             static constexpr uint8_t _intercept_indices[2] = {3, 6};
-            double _resolution = _computeResolution();
+            const double _resolution = _computeResolution();
 
     };
 };
