@@ -34,3 +34,6 @@ bin/
 
 # Test file
 src/test*
+
+# VSCode stuff
+.vscode/
