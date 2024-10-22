@@ -1,5 +1,5 @@
 #include "LM35IC.h"
-#include <math.h>
+#include <cmath>
 
 #define TESTING 1
 
@@ -62,7 +62,7 @@ namespace LM35{
 
         const double sensor_range = _sensors[_sensor][1] - _sensors[_sensor][0];
 
-        return (sensor_range) / (1.0 / _adc_res * _gain * _sensitivity * (sensor_range));
+        return (sensor_range) / trunc((1.0 / _adc_res * _gain * _sensitivity * (sensor_range)));
 
     };
 
