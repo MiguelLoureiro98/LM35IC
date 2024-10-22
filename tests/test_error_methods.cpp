@@ -68,7 +68,7 @@ TEST(testErrorMethods, testResolution){
 
 TEST(testErrorMethods, testAccuracy){
 
-    /*double lm35d_typical_ref = lm35d->computeAccuracy(25.0);
+    double lm35d_typical_ref = lm35d->computeAccuracy(25.0);
     double lm35d_typical_low = lm35d->computeAccuracy(0.0);
     double lm35d_typical_high = lm35d->computeAccuracy(100.0);
     double lm35d_worst_ref = lm35d->computeAccuracy(25.0, true);
@@ -101,7 +101,44 @@ TEST(testErrorMethods, testAccuracy){
     double lm35c_typical_high = lm35c->computeAccuracy(110.0);
     double lm35c_worst_ref = lm35c->computeAccuracy(25.0, true);
     double lm35c_worst_low = lm35c->computeAccuracy(-40.0, true);
-    double lm35c_worst_high = lm35c->computeAccuracy(110.0, true);*/
+    double lm35c_worst_high = lm35c->computeAccuracy(110.0, true);
+
+    double threshold = 0.01;
+
+    DOUBLES_EQUAL(0.6, lm35d_typical_ref, threshold);
+    DOUBLES_EQUAL(0.9, lm35d_typical_low, threshold);
+    DOUBLES_EQUAL(0.9, lm35d_typical_high, threshold);
+    DOUBLES_EQUAL(1.5, lm35d_worst_ref, threshold);
+    DOUBLES_EQUAL(2.0, lm35d_worst_low, threshold);
+    DOUBLES_EQUAL(2.0, lm35d_worst_high, threshold);
+
+    DOUBLES_EQUAL(0.4, lm35_typical_ref, threshold);
+    DOUBLES_EQUAL(0.8, lm35_typical_low, threshold);
+    DOUBLES_EQUAL(0.8, lm35_typical_high, threshold);
+    DOUBLES_EQUAL(1.0, lm35_worst_ref, threshold);
+    DOUBLES_EQUAL(1.5, lm35_worst_low, threshold);
+    DOUBLES_EQUAL(1.5, lm35_worst_high, threshold);
+
+    DOUBLES_EQUAL(0.2, lm35a_typical_ref, threshold);
+    DOUBLES_EQUAL(0.4, lm35a_typical_low, threshold);
+    DOUBLES_EQUAL(0.4, lm35a_typical_high, threshold);
+    DOUBLES_EQUAL(0.5, lm35a_worst_ref, threshold);
+    DOUBLES_EQUAL(1.0, lm35a_worst_low, threshold);
+    DOUBLES_EQUAL(1.0, lm35a_worst_high, threshold);
+
+    DOUBLES_EQUAL(0.2, lm35ca_typical_ref, threshold);
+    DOUBLES_EQUAL(0.4, lm35ca_typical_low, threshold);
+    DOUBLES_EQUAL(0.4, lm35ca_typical_high, threshold);
+    DOUBLES_EQUAL(0.5, lm35ca_worst_ref, threshold);
+    DOUBLES_EQUAL(1.5, lm35ca_worst_low, threshold);
+    DOUBLES_EQUAL(1.0, lm35ca_worst_high, threshold);
+
+    DOUBLES_EQUAL(0.4, lm35c_typical_ref, threshold);
+    DOUBLES_EQUAL(0.8, lm35c_typical_low, threshold);
+    DOUBLES_EQUAL(0.8, lm35c_typical_high, threshold);
+    DOUBLES_EQUAL(1.0, lm35c_worst_ref, threshold);
+    DOUBLES_EQUAL(2.0, lm35c_worst_low, threshold);
+    DOUBLES_EQUAL(1.5, lm35c_worst_high, threshold);
 
 };
 
