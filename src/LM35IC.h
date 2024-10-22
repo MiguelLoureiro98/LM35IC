@@ -6,7 +6,7 @@
 namespace LM35{
 
     // Define sensors type.
-    enum sensors{LM35, LM35A, LM35CA, LM35C, LM35D=0};
+    enum sensors{LM35_normal, LM35A, LM35CA, LM35C, LM35D};
 
     class LM35IC{
 
@@ -39,11 +39,11 @@ namespace LM35{
             static constexpr double _adc_accuracy = 2.0;
             static constexpr uint8_t _n_sensors = 5;
             static constexpr uint8_t _n_details = 8;
-            static constexpr double _sensors[_n_sensors][_n_details] = {{0.0, 100.0, 0.012, 0.6, 0.004, 0.02, 1.5, 0.0067},
-                                                                        {-55.0, 150.0, 0.005, 0.4, 0.0032, 0.00625, 1.0, 0.004},
+            static constexpr double _sensors[_n_sensors][_n_details] = {{-55.0, 150.0, 0.005, 0.4, 0.0032, 0.00625, 1.0, 0.004},
                                                                         {-55.0, 150.0, 0.0025, 0.2, 0.0016, 0.00625, 0.5, 0.004},
                                                                         {-40.0, 110.0, 0.003077, 0.2, 0.002353, 0.0154, 0.5, 0.005882},
-                                                                        {-40.0, 110.0, 0.006154, 0.4, 0.004706, 0.0154, 1.0, 0.005882}};
+                                                                        {-40.0, 110.0, 0.006154, 0.4, 0.004706, 0.0154, 1.0, 0.005882},
+                                                                        {0.0, 100.0, 0.012, 0.6, 0.004, 0.02, 1.5, 0.0067}};
             static constexpr uint8_t _slope_indices[4] = {2, 4, 5, 7};
             static constexpr uint8_t _intercept_indices[2] = {3, 6};
             const double _resolution = _computeResolution();
