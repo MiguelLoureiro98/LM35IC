@@ -1,6 +1,5 @@
 #include "LM35IC.h"
 #include <cmath>
-#include <iostream>
 
 #define TESTING 1
 
@@ -42,16 +41,6 @@ namespace LM35{
     };
 
     double LM35IC::getResolution() const {
-
-        /*if(_sensor == LM35A){
-
-            std::cout << "Sensor: " << _sensor << std::endl;
-            //std::cout << "Range: " << sensor_range << std::endl;
-            std::cout << "ADC res: " << _adc_res << std::endl;
-            std::cout << "Gain: " << _gain << std::endl;
-            std::cout << "Sensitivity: " << _sensitivity << std::endl;
-
-        }*/
 
         return this->_resolution;
 
