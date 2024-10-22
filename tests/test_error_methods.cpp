@@ -144,6 +144,13 @@ TEST(testErrorMethods, testAccuracy){
 
 TEST(testErrorMethods, testError){
 
+    double temp = 25.0;
+    double threshold = 0.001;
 
+    DOUBLES_EQUAL(lm35d->computeAccuracy(temp) + 2.0 * lm35d->getResolution(), lm35d->computeError(temp), threshold);
+    DOUBLES_EQUAL(lm35->computeAccuracy(temp) + 2.0 * lm35->getResolution(), lm35->computeError(temp), threshold);
+    DOUBLES_EQUAL(lm35a->computeAccuracy(temp) + 2.0 * lm35a->getResolution(), lm35a->computeError(temp), threshold);
+    DOUBLES_EQUAL(lm35ca->computeAccuracy(temp) + 2.0 * lm35ca->getResolution(), lm35ca->computeError(temp), threshold);
+    DOUBLES_EQUAL(lm35c->computeAccuracy(temp) + 2.0 * lm35c->getResolution(), lm35c->computeError(temp), threshold);
 
 };
