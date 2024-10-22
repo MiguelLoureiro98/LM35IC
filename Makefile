@@ -6,10 +6,9 @@ INCLUDE = $(SOURCE_DIR)/LM35IC.h
 OBJ_DIR = obj
 OBJ = $(OBJ_DIR)/LM35IC.o
 TEST_DIR = tests
-TEST_OBJ = $(TEST_DIR)/obj
 TEST_BIN = $(TEST_DIR)/bin
 TEST_SOURCES = $(wildcard $(TEST_DIR)/*.cpp)
-TESTS = $(patsubst $(TEST_DIR)/%.cpp, $(TEST_BIN)/%.out, $(TEST_SOURCES))
+TESTS = $(TEST_BIN)/tests.out
 
 .PHONY:
 all: runTests
@@ -18,7 +17,7 @@ $(OBJ): $(SRC) $(INCLUDE)
 	$(CPP) $(CPP_FLAGS) -c $< -o $@
 
 $(TESTS): $(TEST_SOURCES) $(OBJ)
-	$(CPP) $(CPP_FLAGS) $^ -o $@
+	$(CPP) $(CPP_FLAGS) $^ -I src/ -lCppUTest -o $@
 
 .PHONY:
 lib: $(OBJ)
@@ -26,9 +25,10 @@ lib: $(OBJ)
 
 .PHONY:
 runTests: $(TESTS)
-	@echo "Tests built."
+	tests/bin/tests.out
+	@echo "Tests run."
 
 .PHONY:
 clean:
-	rm -r $(OBJ_DIR)/* $(TEST_OBJ)/* $(TEST_BIN)/*
+	rm -r $(OBJ_DIR)/* $(TEST_BIN)/*
 	@echo "All files were successfully deleted."
