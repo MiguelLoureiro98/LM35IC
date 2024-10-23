@@ -42,7 +42,7 @@ namespace LM35{
 
     double LM35IC::readTemp() const {
 
-        const double adc_reading = ADC_reading(_pin); // analogRead(_pin);
+        const double adc_reading = analogRead(_pin); //ADC_reading(_pin);
 
         return 1.0 / _sensitivity * (1.0 / _gain * adc_reading * _adc_res + _offset);
 
