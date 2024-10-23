@@ -23,7 +23,8 @@ SOFTWARE.
 ******************************************************************************/
 
 #include "LM35IC.h"
-#include <cmath>
+#include <math.h>
+#include <Arduino.h>
 
 #define TESTING 1
 
