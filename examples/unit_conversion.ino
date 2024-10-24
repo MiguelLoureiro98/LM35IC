@@ -1,9 +1,14 @@
 /*********************************************************************************************
  
-This is a very simple example that illustrates how the library can be used to read temperature
-values from a sensor. For this sketch, the LM35D sensor was used (this is the default).
+By default, the values read from the sensor are given in Celsius. The LM35IC class provides
+two methods to convert values to Kelvin and Fahrenheit.
 
-Note that this library supports all sensors from the LM35 family.
+This sketch shows how the Celsius2Kelvin() method can be used to convert temperature values to
+Kelvin once they have been read from the sensor. Since this is a static method, it must be
+invoked as LM35IC::Celsius2Kelvin(). The temperature in Celsius must be passed as an argument.
+
+To convert values to Fahrenheit, the procedure is identical, but the Celsius2Fahrenheit()
+method must be called instead.
 
 **********************************************************************************************/
 
@@ -37,11 +42,14 @@ void loop() {
 
         // Read temperature value.
         double temp = sensor.readTemp();
+        
+        // Convert the value to Kelvin.
+        double tempKelvin = LM35IC::Celsius2Kelvin(temp);
 
         // Print value to the serial monitor.
         Serial.print("Temperature: ");
-        Serial.print(temp);
-        Serial.println("º C");
+        Serial.print(tempKelvin);
+        Serial.println(" K");
 
         // Set the current time as the new reference time instant.
         previous_time = current_time;
