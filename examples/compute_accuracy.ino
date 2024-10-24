@@ -1,14 +1,17 @@
 /*********************************************************************************************
  
-By default, the values read from the sensor are given in Celsius. The LM35IC class provides
-two methods to convert values to Kelvin and Fahrenheit.
+Sensors have an associated accuracy. According to the data sheet, the accuracy of the LM35
+family of sensors varies somewhat significantly with the temperature.
 
-This sketch shows how the Celsius2Kelvin() method can be used to convert temperature values to
-Kelvin once they have been read from the sensor. Since this is a static method, it is not tied
-to any particular class instance. The temperature in Celsius must be passed as an argument.
+This sketch shows how the library's computeAccuracy() method can be used to compute the
+accuracy of a given measurement. Two curves are provided by the data sheet: the typical 
+accuracy curve, and the limit accuracy curve. Therefore, in addition to the temperature, 
+the computeAccuracy() method receives a second argument. If this is set to false, the typical
+accuracy curve will be used to compute the accuracy. Otherwise, the limit curve will be used.
 
-To convert values to Fahrenheit, the procedure is identical, but the Celsius2Fahrenheit()
-method must be called instead.
+Note that the accuracy curves differ from one sensor to another. 
+
+Read the official documentation for more details.
 
 **********************************************************************************************/
 
@@ -42,14 +45,16 @@ void loop() {
 
         // Read temperature value.
         double temp = sensor.readTemp();
-        
-        // Convert the value to Kelvin.
-        double tempKelvin = LM35IC::Celsius2Kelvin(temp);
+
+        // Compute the measurement's accuracy.
+        double measurement_accuracy = sensor.computeAccuracy(temp, false);
 
         // Print value to the serial monitor.
         Serial.print("Temperature: ");
-        Serial.print(tempKelvin);
-        Serial.println(" K");
+        Serial.print(temp);
+        Serial.print(" +/- ");
+        Serial.print(measurement_accuracy);
+        Serial.println(" ºC");
 
         // Set the current time as the new reference time instant.
         previous_time = current_time;
