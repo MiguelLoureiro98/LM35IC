@@ -1,1 +1,67 @@
-site_name: My Docs
+site_name: LM35 Arduino library
+site_url: https://miguelloureiro98.github.io/LM35IC/
+repo_url: https://github.com/MiguelLoureiro98/LM35IC
+
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.share
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: blue
+      accent: cyan
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+      primary: blue
+      accent: cyan
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/miguel-santos-loureiro/
+      name: Miguel Loureiro's LinkedIn page
+    - icon: fontawesome/brands/github
+      link: https://github.com/MiguelLoureiro98
+      name: Miguel Loureiro's GitHub page
+
+copyright: Copyright &copy; 2024 Miguel Loureiro
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Basic usage: basics.md
+  - LM35 namespace API: class_API.md
+  - About: about.md

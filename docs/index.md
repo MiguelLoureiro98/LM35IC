@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Welcome to the LM35IC library documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+The LM35IC library is essentially a sensor driver for LM35 integrated circuit temperature sensors. 
 
-## Commands
+This is a library to help users interface with the LM35 family of sensors.
+It is flexible enough to be used with any of these sensors, as well as every Arduino board based on the ATMega328P.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+# Features
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- **Support for the whole LM35 family**: this library can be used with every LM35 sensor, including the LM35, LM35A, LM35CA, LM35C and LM35D sensors. Take a look at the data sheet for more details;
+- **Error computation**: leverage the library's methods to compute the error associated with your measurements;
+- **Signal conditioning compensation**: the library takes the gain and the offset of the signal conditioning circuit into account, making it far more flexible;
+- **Support for different boards**: you can manually specify your board's operating voltage and ADC characteristics. This makes the library compatible with several Arduino boards.
