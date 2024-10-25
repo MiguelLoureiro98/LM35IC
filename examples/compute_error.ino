@@ -21,6 +21,7 @@ Read the sensor's data sheet and the official documentation for more details.
 
 **********************************************************************************************/
 
+#include <stdint.h>
 #include "LM35IC.h"
 
 using LM35::LM35IC;

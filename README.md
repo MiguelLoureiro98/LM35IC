@@ -1,6 +1,12 @@
 # LM35IC
 Arduino sensor driver for LM35 integrated circuit temperature sensors. The project is currently under way.
 
+# Installation
+WIP.
+
+# Basic usage
+See [this example](examples/basics.ino) for a basic guide on how to use this library.
+
 # Examples
 The examples should be analysed in the following order:
 

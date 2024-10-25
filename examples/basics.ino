@@ -7,6 +7,7 @@ Note that this library supports all sensors from the LM35 family.
 
 **********************************************************************************************/
 
+#include <stdint.h>
 #include "LM35IC.h"
 
 using LM35::LM35IC;

@@ -12,6 +12,7 @@ method must be called instead.
 
 **********************************************************************************************/
 
+#include <stdint.h>
 #include "LM35IC.h"
 
 using LM35::LM35IC;
