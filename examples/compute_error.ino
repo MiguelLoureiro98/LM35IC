@@ -1,15 +1,21 @@
 /*********************************************************************************************
  
-Sensors have an associated accuracy. According to the data sheet, the accuracy of the LM35
-family of sensors varies somewhat significantly with the temperature.
+In addition to the sensor's accuracy, a measurement chain contains several other sources of
+error, such as measurement resolution or ADC (Analog-to-Digital Converter) noise. To obtain an
+estimate of the measurement error, these must also be taken into account.
 
-This sketch shows how the library's computeAccuracy() method can be used to compute the
-accuracy of a given measurement. Two curves are provided by the data sheet: the typical 
-accuracy curve, and the limit accuracy curve. Therefore, in addition to the temperature, 
-the computeAccuracy() method receives a second argument. If this is set to false, the typical
-accuracy curve will be used to compute the accuracy. Otherwise, the limit curve will be used.
+This sketch shows how the library's computeError() method can be used to compute the
+error of a given measurement. This computes the measurement error from the sensor's accuracy 
+(which varies with temperature), measurement resolution, and ADC noise (2 LSB for the 
+ATMega328P) using the following formula:
 
-Note that the accuracy curves differ from one sensor to another. 
+ERROR = SENSOR_ACCURACY(temperature) + ADC_NOISE * MEASUREMENT_RESOLUTION
+
+with ADC_NOISE = 2.
+
+Since this method relies on the computeAccuracy() method to compute the sensor's accuracy, the
+temperature and a parameter indicating which accuracy curve should be used must be passed as 
+arguments. See the "compute_accuracy.ino" example for more details.
 
 Read the sensor's data sheet and the official documentation for more details.
 
@@ -46,15 +52,14 @@ void loop() {
         // Read temperature value.
         double temp = sensor.readTemp();
 
-        // Compute the measurement's accuracy.
-        double measurement_accuracy = sensor.computeAccuracy(temp, false);
+        // Compute measurement error.
+        double measurement_error = sensor.computeError(temp, false);
 
-        // Print value to the serial monitor, as well as its accuracy.
+        // Print value and its associated error to the serial monitor.
         Serial.print("Temperature: ");
         Serial.print(temp);
-        Serial.println(" ºC");
-        Serial.print("Measurement accuracy: ");
-        Serial.print(measurement_accuracy);
+        Serial.print(" +/- ");
+        Serial.print(measurement_error);
         Serial.println(" ºC");
 
         // Set the current time as the new reference time instant.
