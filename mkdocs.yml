@@ -47,15 +47,14 @@ copyright: Copyright &copy; 2024 Miguel Loureiro
 
 plugins:
   - search
-#  - mkdoxy:
-#      doxygen-bin-path: C:/Program Files/doxygen/bin
-#      projects:
-#        LM35IC: # name of project must be alphanumeric + numbers (without spaces)
-#          src-dirs: src/ # path to source code (support multiple paths separated by space) => INPUT
-#          full-doc: True # if you want to generate full documentation
-#          doxy-cfg: # standard doxygen configuration (key: value)
-#            FILE_PATTERNS: "*.cpp *.h*" # specify file patterns to filter out
-#            RECURSIVE: True # recursive search in source directories
+  - mkdoxy:
+      projects:
+        LM35IC: # name of project must be alphanumeric + numbers (without spaces)
+          src-dirs: src/ # path to source code (support multiple paths separated by space) => INPUT
+          full-doc: True # if you want to generate full documentation
+          doxy-cfg: # standard doxygen configuration (key: value)
+            FILE_PATTERNS: "*.cpp *.h*" # specify file patterns to filter out
+            RECURSIVE: True # recursive search in source directories
 
 markdown_extensions:
   - pymdownx.arithmatex:
