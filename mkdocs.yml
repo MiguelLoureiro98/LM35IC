@@ -3,6 +3,8 @@ site_url: https://miguelloureiro98.github.io/LM35IC/
 repo_url: https://github.com/MiguelLoureiro98/LM35IC
 
 theme:
+  #logo: logos/logo.jpg
+  #favicon: logos/favicon.jpg
   icon:
     repo: fontawesome/brands/github
   name: material
@@ -21,16 +23,16 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/weather-night
+        icon: material/lightbulb-outline
         name: Switch to dark mode
-      primary: blue
-      accent: cyan
+      primary: teal
+      accent: green
     - scheme: slate
       toggle:
-        icon: material/weather-sunny
+        icon: material/lightbulb
         name: Switch to light mode
-      primary: blue
-      accent: cyan
+      primary: teal
+      accent: green
 
 extra:
   social:
@@ -45,6 +47,15 @@ copyright: Copyright &copy; 2024 Miguel Loureiro
 
 plugins:
   - search
+#  - mkdoxy:
+#      doxygen-bin-path: C:/Program Files/doxygen/bin
+#      projects:
+#        LM35IC: # name of project must be alphanumeric + numbers (without spaces)
+#          src-dirs: src/ # path to source code (support multiple paths separated by space) => INPUT
+#          full-doc: True # if you want to generate full documentation
+#          doxy-cfg: # standard doxygen configuration (key: value)
+#            FILE_PATTERNS: "*.cpp *.h*" # specify file patterns to filter out
+#            RECURSIVE: True # recursive search in source directories
 
 markdown_extensions:
   - pymdownx.arithmatex:
