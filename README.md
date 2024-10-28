@@ -1,4 +1,4 @@
-[![Arduino Library specifications](https://github.com/MiguelLoureiro98/LM35IC/actions/workflows/lint.yml/badge.svg)](https://github.com/MiguelLoureiro98/LM35IC/actions/workflows/lint.yml)  [![Building (Examples)](https://github.com/MiguelLoureiro98/LM35IC/actions/workflows/examples.yml/badge.svg)](https://github.com/MiguelLoureiro98/LM35IC/actions/workflows/examples.yml)
+[![Arduino Library specifications](https://github.com/MiguelLoureiro98/LM35IC/actions/workflows/lint.yml/badge.svg)](https://github.com/MiguelLoureiro98/LM35IC/actions/workflows/lint.yml)  [![Building (Examples)](https://github.com/MiguelLoureiro98/LM35IC/actions/workflows/examples.yml/badge.svg)](https://github.com/MiguelLoureiro98/LM35IC/actions/workflows/examples.yml)  [![Build Documentation](https://github.com/MiguelLoureiro98/LM35IC/actions/workflows/docs.yml/badge.svg)](https://github.com/MiguelLoureiro98/LM35IC/actions/workflows/docs.yml)
 
 # LM35IC temperature sensors library
 
