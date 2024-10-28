@@ -76,7 +76,8 @@ nav:
   - Home: index.md
   - Installation: installation.md
   - Basic usage: basics.md
-  - API reference: LM35IC/namespaces.md
+  - API reference: class_API.md
   - About: about.md
 
-not_in_nav: class_API.md
+not_in_nav: |
+  /LM35IC/namespaces.md

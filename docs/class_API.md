@@ -1,1 +1,0 @@
-::: doxy.LM35IC.namespace.list
