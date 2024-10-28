@@ -77,8 +77,35 @@ nav:
   - Installation: installation.md
   - Basic usage: basics.md
   - API reference: 
-    - API_reference.md
+    - Main page: API_reference.md
+    - API index: LM35IC/annotated.md
+    - Namespace list: LM35IC/namespaces.md
+    - LM35 namespace: LM35IC/namespaceLM35.md
+    - LM35IC class: LM35IC/classLM35_1_1LM35IC.md
   - About: about.md
 
 not_in_nav: |
-  /LM35IC/namespaces.md
+  /LM35IC/links.md
+  /LM35IC/variables.md
+  /LM35IC/macros.md
+  /LM35IC/functions.md
+  /LM35IC/pages.md
+  /LM35IC/modules.md
+  /LM35IC/namespace_member_enums.md
+  /LM35IC/namespace_member_typedefs.md
+  /LM35IC/namespace_member_variables.md
+  /LM35IC/namespace_member_functions.md
+  /LM35IC/namespace_members.md
+  /LM35IC/class_members.md
+  /LM35IC/class_member_functions.md
+  /LM35IC/class_member_variables.md
+  /LM35IC/class_member_typedefs.md
+  /LM35IC/class_member_enums.md
+  /LM35IC/hierarchy.md
+  /LM35IC/LM35IC_8h.md
+  /LM35IC/LM35IC_8h_source.md
+  /LM35IC/LM35IC_8cpp.md
+  /LM35IC/LM35IC_8cpp_source.md
+  /LM35IC/classes.md
+  /LM35IC/files.md
+  /LM35IC/dir_68267d1309a1af8e8297ef4c3efbcdba.md
