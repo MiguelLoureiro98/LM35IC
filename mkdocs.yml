@@ -55,6 +55,9 @@ plugins:
           doxy-cfg: # standard doxygen configuration (key: value)
             FILE_PATTERNS: "*.cpp *.h*" # specify file patterns to filter out
             RECURSIVE: True # recursive search in source directories
+            JAVADOC_AUTOBRIEF: True
+            JAVADOC_BANNER: True
+            JAVADOC_BLOCK: True
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -73,5 +76,7 @@ nav:
   - Home: index.md
   - Installation: installation.md
   - Basic usage: basics.md
-  - LM35 namespace API: class_API.md
+  - API reference: LM35IC/namespaces.md
   - About: about.md
+
+not_in_nav: class_API.md
