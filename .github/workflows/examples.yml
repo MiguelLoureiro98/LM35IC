@@ -1,0 +1,24 @@
+name: Building (Examples)
+
+on:
+  workflow_dispatch
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Checkout custom library
+        uses: actions/checkout@v4
+        with:
+          repository: MiguelLoureiro98/LM35IC
+          ref: main
+          path: CustomLM35IC
+
+      - name: Compile examples
+        uses: ArminJo/arduino-test-compile@v3
+        with:
+          sketch-names: "*.ino"
+          sketch-names-find-start: examples/

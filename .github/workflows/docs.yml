@@ -10,14 +10,25 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - uses: actions/cache@v4
+
+      - name: Set up cache
+        uses: actions/cache@v4
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: apt install doxygen
-      - run: pip install mkdocs-material mkdoxy
-      - run: mkdocs gh-deploy --force
+
+      - name: Install Doxygen
+        run: apt install doxygen
+
+      - name: Install MKDocs and dependencies
+        run: pip install mkdocs-material mkdoxy
+
+      - name: Deploy documentation
+        run: mkdocs gh-deploy --force
