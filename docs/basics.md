@@ -61,3 +61,7 @@ void loop() {
 }
 
 ```
+
+For more information on how to use the library, please take a look at our [API reference](API_reference.md).
+
+For more complex examples that illustrate how to leverage the library's advanced capabilities, try running some of the [examples](https://github.com/MiguelLoureiro98/LM35IC/tree/main/examples) provided with the library.

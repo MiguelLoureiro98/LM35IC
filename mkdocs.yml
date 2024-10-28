@@ -76,7 +76,8 @@ nav:
   - Home: index.md
   - Installation: installation.md
   - Basic usage: basics.md
-  - API reference: class_API.md
+  - API reference: 
+    - API_reference.md
   - About: about.md
 
 not_in_nav: |
