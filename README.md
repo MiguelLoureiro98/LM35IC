@@ -16,7 +16,7 @@ It is flexible enough to be used with any of these sensors, as well as every Ard
 
 # Installation
 
-The library has yet to be added to the Arduino Library Index. Once it is accepted, you will be able to install it using the Arduino Library Manager.
+The library has yet to be added to the Arduino Library Index. Once it is accepted, you will be able to install it using the Arduino Library Manager. For now, the library can be [downloaded directly from Github](https://www.youtube.com/watch?v=WuqEAUirXw0).
 
 # Basic usage
 
