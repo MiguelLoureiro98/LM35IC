@@ -35,7 +35,7 @@ The library comes with several example sketches to help users understand how the
 
 # Documentation
 
-Please refer to the [official documentation](https://miguelloureiro98.github.io/LM35IC/) for more guidance on how to use the library.
+Please refer to the [official documentation](https://miguelloureiro98.github.io/LM35IC) for more guidance on how to use the library.
 
 # Licence
 
