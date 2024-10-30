@@ -20,7 +20,7 @@ jobs:
       - name: Run linter
         uses: arduino/arduino-lint-action@v2
         with:
-          library-manager: submit
+          library-manager: update
           compliance: strict
           project-type: library
           recursive: false
