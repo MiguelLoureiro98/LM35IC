@@ -16,7 +16,7 @@ It is flexible enough to be used with any of these sensors, as well as every Ard
 
 # Installation
 
-The library has yet to be added to the Arduino Library Index. Once it is accepted, you will be able to install it using the Arduino Library Manager. For now, the library can be [downloaded directly from Github](https://www.youtube.com/watch?v=WuqEAUirXw0).
+The library is available in the Arduino Library Index, meaning it can be installed using the Arduino Library Manager. Just click on the Library Manager icon in your Arduino IDE, type "LM35IC", and install it. The library can also be [downloaded directly from Github](https://www.youtube.com/watch?v=WuqEAUirXw0).
 
 # Basic usage
 
