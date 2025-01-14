@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceLM35" kind="namespace" language="C++">
+    <compoundname>LM35</compoundname>
+    <innerclass refid="classLM35_1_1LM35IC" prot="public">LM35::LM35IC</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>sensors</name>
+        <qualifiedname>LM35::sensors</qualifiedname>
+        <enumvalue id="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9a19bd3b25f77a798ec3e6709ee7770461" prot="public">
+          <name>LM35_normal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9a46f16fc4048c18fef0c2aafbbb3cf03c" prot="public">
+          <name>LM35A</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9a6fa27fe7d28086ab8e0e20cb0cbe34f8" prot="public">
+          <name>LM35CA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9a2c34b4c235ad523813e482624071187d" prot="public">
+          <name>LM35C</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9a371a0d3ec0cc66632e4d9d2b4065f907" prot="public">
+          <name>LM35D</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Sensors supported by this library. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This type defines every sensor supported by this library: LM35_normal, LM35A, LM35CA, LM35C, and LM35D. Read the sensors&apos; data sheet for more details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="56" column="5" bodyfile="src/LM35IC.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The library&apos;s namespace. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A namespace containing the sensors type and the <ref refid="classLM35_1_1LM35IC" kindref="compound">LM35IC</ref> class, both of which are defined by the library. </para>
+    </detaileddescription>
+    <location file="src/LM35IC.cpp" line="37" column="1"/>
+  </compounddef>
+</doxygen>

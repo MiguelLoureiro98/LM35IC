@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classLM35_1_1LM35IC" kind="class"><name>LM35::LM35IC</name>
+    <member refid="classLM35_1_1LM35IC_1a706f3fb53173f7f9c9b1dc62016c0be9" kind="variable"><name>_pin</name></member>
+    <member refid="classLM35_1_1LM35IC_1a743f4480af6c90dcc7cfb3058c45c99a" kind="variable"><name>_sensor</name></member>
+    <member refid="classLM35_1_1LM35IC_1a15b7522682a6bdff6f0cf368ad65910c" kind="variable"><name>_gain</name></member>
+    <member refid="classLM35_1_1LM35IC_1a09a9f60398746d0e797b48d9a55f788b" kind="variable"><name>_offset</name></member>
+    <member refid="classLM35_1_1LM35IC_1a7f17c16c63734fe41ea1b049741ad946" kind="variable"><name>_adc_res</name></member>
+    <member refid="classLM35_1_1LM35IC_1a8d90060699b36b9a141ea704994b0b80" kind="variable"><name>_resolution</name></member>
+    <member refid="classLM35_1_1LM35IC_1ab33f7e9c7e506b7cc10b90264d8ef7f3" kind="variable"><name>_sensitivity</name></member>
+    <member refid="classLM35_1_1LM35IC_1a58d15000b7a0f85c729095392f3a3044" kind="variable"><name>_reference_temperature</name></member>
+    <member refid="classLM35_1_1LM35IC_1aef5156639598e365cef137baf5f388ea" kind="variable"><name>_adc_accuracy</name></member>
+    <member refid="classLM35_1_1LM35IC_1a0766e5940a85ae3036c450e25a80e67c" kind="variable"><name>_n_sensors</name></member>
+    <member refid="classLM35_1_1LM35IC_1abc87dd6ab571b784ded310e85fabb6c7" kind="variable"><name>_n_details</name></member>
+    <member refid="classLM35_1_1LM35IC_1abbb70b45d19e9c93260a6b2c7a252499" kind="variable"><name>_sensors</name></member>
+    <member refid="classLM35_1_1LM35IC_1ac4d31569dd56b771034a23c8c44ecdc3" kind="variable"><name>_slope_indices</name></member>
+    <member refid="classLM35_1_1LM35IC_1afed510476ed4159d0df50987c1545e66" kind="variable"><name>_intercept_indices</name></member>
+    <member refid="classLM35_1_1LM35IC_1a0d6bbe01a9ffb88a781b8cb8e27d169e" kind="function"><name>LM35IC</name></member>
+    <member refid="classLM35_1_1LM35IC_1a4c9ae906752de04dfc0d9f53355c54f1" kind="function"><name>readTemp</name></member>
+    <member refid="classLM35_1_1LM35IC_1abe5bcf103bfcd36c76dea3902c5ca469" kind="function"><name>computeError</name></member>
+    <member refid="classLM35_1_1LM35IC_1ae4c30dd730ef442fdb634619b75013e8" kind="function"><name>getResolution</name></member>
+    <member refid="classLM35_1_1LM35IC_1a14bc1f1c47209e3e4d94d25c1932c7ff" kind="function"><name>computeAccuracy</name></member>
+    <member refid="classLM35_1_1LM35IC_1a7c5211f064191d921b2ebbf497baea52" kind="function"><name>Celsius2Kelvin</name></member>
+    <member refid="classLM35_1_1LM35IC_1a2e1c80f4817af6bedc2033830eb25079" kind="function"><name>Celsius2Fahrenheit</name></member>
+    <member refid="classLM35_1_1LM35IC_1ad7ad8e483de443eb65e877aa5dd08831" kind="function"><name>_computeResolution</name></member>
+  </compound>
+  <compound refid="namespaceLM35" kind="namespace"><name>LM35</name>
+    <member refid="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9" kind="enum"><name>sensors</name></member>
+    <member refid="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9a19bd3b25f77a798ec3e6709ee7770461" kind="enumvalue"><name>LM35_normal</name></member>
+    <member refid="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9a46f16fc4048c18fef0c2aafbbb3cf03c" kind="enumvalue"><name>LM35A</name></member>
+    <member refid="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9a6fa27fe7d28086ab8e0e20cb0cbe34f8" kind="enumvalue"><name>LM35CA</name></member>
+    <member refid="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9a2c34b4c235ad523813e482624071187d" kind="enumvalue"><name>LM35C</name></member>
+    <member refid="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9a371a0d3ec0cc66632e4d9d2b4065f907" kind="enumvalue"><name>LM35D</name></member>
+  </compound>
+  <compound refid="LM35IC_8cpp" kind="file"><name>LM35IC.cpp</name>
+    <member refid="LM35IC_8cpp_1a68df6a1c0e7634ba32a66f9f01d4cb6f" kind="define"><name>TESTING</name></member>
+    <member refid="LM35IC_8cpp_1a3cafb6e987ecf98b56ba9070921d1e70" kind="define"><name>ADC_reading</name></member>
+  </compound>
+  <compound refid="LM35IC_8h" kind="file"><name>LM35IC.h</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

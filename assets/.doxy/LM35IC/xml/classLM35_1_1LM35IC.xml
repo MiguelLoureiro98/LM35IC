@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classLM35_1_1LM35IC" kind="class" language="C++" prot="public">
+    <compoundname>LM35::LM35IC</compoundname>
+    <includes refid="LM35IC_8h" local="no">LM35IC.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1a706f3fb53173f7f9c9b1dc62016c0be9" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LM35::LM35IC::_pin</definition>
+        <argsstring></argsstring>
+        <name>_pin</name>
+        <qualifiedname>LM35::LM35IC::_pin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="169" column="21" bodyfile="src/LM35IC.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1a743f4480af6c90dcc7cfb3058c45c99a" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9" kindref="member">sensors</ref></type>
+        <definition>sensors LM35::LM35IC::_sensor</definition>
+        <argsstring></argsstring>
+        <name>_sensor</name>
+        <qualifiedname>LM35::LM35IC::_sensor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="170" column="21" bodyfile="src/LM35IC.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1a15b7522682a6bdff6f0cf368ad65910c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LM35::LM35IC::_gain</definition>
+        <argsstring></argsstring>
+        <name>_gain</name>
+        <qualifiedname>LM35::LM35IC::_gain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="171" column="20" bodyfile="src/LM35IC.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1a09a9f60398746d0e797b48d9a55f788b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LM35::LM35IC::_offset</definition>
+        <argsstring></argsstring>
+        <name>_offset</name>
+        <qualifiedname>LM35::LM35IC::_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="172" column="20" bodyfile="src/LM35IC.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1a7f17c16c63734fe41ea1b049741ad946" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LM35::LM35IC::_adc_res</definition>
+        <argsstring></argsstring>
+        <name>_adc_res</name>
+        <qualifiedname>LM35::LM35IC::_adc_res</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="173" column="20" bodyfile="src/LM35IC.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1a8d90060699b36b9a141ea704994b0b80" prot="private" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double LM35::LM35IC::_resolution</definition>
+        <argsstring></argsstring>
+        <name>_resolution</name>
+        <qualifiedname>LM35::LM35IC::_resolution</qualifiedname>
+        <initializer>= _computeResolution()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="186" column="26" bodyfile="src/LM35IC.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1ab33f7e9c7e506b7cc10b90264d8ef7f3" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double LM35::LM35IC::_sensitivity</definition>
+        <argsstring></argsstring>
+        <name>_sensitivity</name>
+        <qualifiedname>LM35::LM35IC::_sensitivity</qualifiedname>
+        <initializer>= 0.01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="174" column="37" bodyfile="src/LM35IC.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1a58d15000b7a0f85c729095392f3a3044" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double LM35::LM35IC::_reference_temperature</definition>
+        <argsstring></argsstring>
+        <name>_reference_temperature</name>
+        <qualifiedname>LM35::LM35IC::_reference_temperature</qualifiedname>
+        <initializer>= 25.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="175" column="37" bodyfile="src/LM35IC.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1aef5156639598e365cef137baf5f388ea" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double LM35::LM35IC::_adc_accuracy</definition>
+        <argsstring></argsstring>
+        <name>_adc_accuracy</name>
+        <qualifiedname>LM35::LM35IC::_adc_accuracy</qualifiedname>
+        <initializer>= 2.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="176" column="37" bodyfile="src/LM35IC.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1a0766e5940a85ae3036c450e25a80e67c" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t LM35::LM35IC::_n_sensors</definition>
+        <argsstring></argsstring>
+        <name>_n_sensors</name>
+        <qualifiedname>LM35::LM35IC::_n_sensors</qualifiedname>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="177" column="38" bodyfile="src/LM35IC.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1abc87dd6ab571b784ded310e85fabb6c7" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t LM35::LM35IC::_n_details</definition>
+        <argsstring></argsstring>
+        <name>_n_details</name>
+        <qualifiedname>LM35::LM35IC::_n_details</qualifiedname>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="178" column="38" bodyfile="src/LM35IC.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1abbb70b45d19e9c93260a6b2c7a252499" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double LM35::LM35IC::_sensors</definition>
+        <argsstring>[_n_sensors][_n_details]</argsstring>
+        <name>_sensors</name>
+        <qualifiedname>LM35::LM35IC::_sensors</qualifiedname>
+        <initializer>= {{-55.0, 150.0, 0.005, 0.4, 0.0032, 0.00625, 1.0, 0.004},
+                                                                        {-55.0, 150.0, 0.0025, 0.2, 0.0016, 0.00625, 0.5, 0.004},
+                                                                        {-40.0, 110.0, 0.003077, 0.2, 0.002353, 0.0154, 0.5, 0.005882},
+                                                                        {-40.0, 110.0, 0.006154, 0.4, 0.004706, 0.0154, 1.0, 0.005882},
+                                                                        {0.0, 100.0, 0.012, 0.6, 0.004, 0.02, 1.5, 0.0067}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="179" column="37" bodyfile="src/LM35IC.h" bodystart="179" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1ac4d31569dd56b771034a23c8c44ecdc3" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t LM35::LM35IC::_slope_indices</definition>
+        <argsstring>[4]</argsstring>
+        <name>_slope_indices</name>
+        <qualifiedname>LM35::LM35IC::_slope_indices</qualifiedname>
+        <initializer>= {2, 4, 5, 7}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="184" column="38" bodyfile="src/LM35IC.h" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLM35_1_1LM35IC_1afed510476ed4159d0df50987c1545e66" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t LM35::LM35IC::_intercept_indices</definition>
+        <argsstring>[2]</argsstring>
+        <name>_intercept_indices</name>
+        <qualifiedname>LM35::LM35IC::_intercept_indices</qualifiedname>
+        <initializer>= {3, 6}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="185" column="38" bodyfile="src/LM35IC.h" bodystart="185" bodyend="185"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLM35_1_1LM35IC_1a0d6bbe01a9ffb88a781b8cb8e27d169e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LM35::LM35IC::LM35IC</definition>
+        <argsstring>(uint8_t pin, sensors sensor=LM35D, double gain=1.0, double offset=0.0, double Vcc=5.0, uint8_t ADC_bits=10)</argsstring>
+        <name>LM35IC</name>
+        <qualifiedname>LM35::LM35IC::LM35IC</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceLM35_1ab8a3d11152e549dff8b49c9eec990fe9" kindref="member">sensors</ref></type>
+          <declname>sensor</declname>
+          <defval>LM35D</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>offset</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>Vcc</declname>
+          <defval>5.0</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ADC_bits</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+<para>Class constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Analog input pin connected to the sensor&apos;s output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sensor type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Signal conditioning circuit gain. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Signal conditioning circuit offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Vcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arduino board operating voltage. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ADC_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits of the Analog-to-Digital Converter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="86" column="13" bodyfile="src/LM35IC.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classLM35_1_1LM35IC_1a4c9ae906752de04dfc0d9f53355c54f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double LM35::LM35IC::readTemp</definition>
+        <argsstring>() const</argsstring>
+        <name>readTemp</name>
+        <qualifiedname>LM35::LM35IC::readTemp</qualifiedname>
+        <briefdescription>
+<para>Collect a sensor reading and convert it to a temperature value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Temperature value in Celsius. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="95" column="20" bodyfile="src/LM35IC.cpp" bodystart="44" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classLM35_1_1LM35IC_1abe5bcf103bfcd36c76dea3902c5ca469" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double LM35::LM35IC::computeError</definition>
+        <argsstring>(double temperature, bool worst_case=false) const</argsstring>
+        <name>computeError</name>
+        <qualifiedname>LM35::LM35IC::computeError</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>temperature</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>worst_case</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Compute an error estimate for a given measurement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method yields an estimate of the total measurement error. It takes into account the sensor&apos;s accuracy, the measurement&apos;s resolution, and the ADC noise. The method uses the <ref refid="classLM35_1_1LM35IC_1a14bc1f1c47209e3e4d94d25c1932c7ff" kindref="member">LM35IC::computeAccuracy</ref> and <ref refid="classLM35_1_1LM35IC_1ae4c30dd730ef442fdb634619b75013e8" kindref="member">LM35IC::getResolution</ref> to compute the sensor&apos;s accuracy and the measurement&apos;s resolution, respectively.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">temperature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Temperature measurement in Celsius. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">worst_case</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Accuracy curve that should be used. &apos;true&apos; for worst-case curve, &apos;false&apos; for typical curve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Error estimate in Celsius. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="113" column="20" bodyfile="src/LM35IC.cpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classLM35_1_1LM35IC_1ae4c30dd730ef442fdb634619b75013e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double LM35::LM35IC::getResolution</definition>
+        <argsstring>() const</argsstring>
+        <name>getResolution</name>
+        <qualifiedname>LM35::LM35IC::getResolution</qualifiedname>
+        <briefdescription>
+<para>Get the measurements&apos; resolution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Measurement resolution.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classLM35_1_1LM35IC_1abe5bcf103bfcd36c76dea3902c5ca469" kindref="member">LM35IC::computeError</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="123" column="20" bodyfile="src/LM35IC.cpp" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classLM35_1_1LM35IC_1a14bc1f1c47209e3e4d94d25c1932c7ff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double LM35::LM35IC::computeAccuracy</definition>
+        <argsstring>(double temperature, bool worst_case=false) const</argsstring>
+        <name>computeAccuracy</name>
+        <qualifiedname>LM35::LM35IC::computeAccuracy</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>temperature</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>worst_case</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Compute an estimate of the sensor&apos;s accuracy for a given estimate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">temperature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Temperature measurement in Celsius. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">worst_case</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Accuracy curve that should be used. &apos;true&apos; for worst-case curve, &apos;false&apos; for typical curve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Sensor accuracy for the given measurement.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classLM35_1_1LM35IC_1abe5bcf103bfcd36c76dea3902c5ca469" kindref="member">LM35IC::computeError</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="137" column="20" bodyfile="src/LM35IC.cpp" bodystart="58" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classLM35_1_1LM35IC_1a7c5211f064191d921b2ebbf497baea52" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double LM35::LM35IC::Celsius2Kelvin</definition>
+        <argsstring>(double temperature_Celsius)</argsstring>
+        <name>Celsius2Kelvin</name>
+        <qualifiedname>LM35::LM35IC::Celsius2Kelvin</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>temperature_Celsius</declname>
+        </param>
+        <briefdescription>
+<para>Convert a temperature value from Celsius to Kelvin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">temperature_Celsius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Temperature in Celsius.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Temperature in Kelvin. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="148" column="27" bodyfile="src/LM35IC.cpp" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classLM35_1_1LM35IC_1a2e1c80f4817af6bedc2033830eb25079" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double LM35::LM35IC::Celsius2Fahrenheit</definition>
+        <argsstring>(double temperature_Celsius)</argsstring>
+        <name>Celsius2Fahrenheit</name>
+        <qualifiedname>LM35::LM35IC::Celsius2Fahrenheit</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>temperature_Celsius</declname>
+        </param>
+        <briefdescription>
+<para>Convert a temperature value from Celsius to Fahrenheit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">temperature_Celsius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Temperature in Celsius.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Temperature in Fahrenheit. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="159" column="27" bodyfile="src/LM35IC.cpp" bodystart="80" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classLM35_1_1LM35IC_1ad7ad8e483de443eb65e877aa5dd08831" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double LM35::LM35IC::_computeResolution</definition>
+        <argsstring>() const</argsstring>
+        <name>_computeResolution</name>
+        <qualifiedname>LM35::LM35IC::_computeResolution</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LM35IC.h" line="164" column="20" bodyfile="src/LM35IC.cpp" bodystart="86" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="namespaceLM35" kindref="compound">LM35</ref> sensor class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements the operations associated with the sensor. These include collecting a sample, unit conversion, and computing measurement error, sensor accuracy and measurement chain resolution. </para>
+    </detaileddescription>
+    <location file="src/LM35IC.h" line="69" column="5" bodyfile="src/LM35IC.h" bodystart="69" bodyend="188"/>
+    <listofallmembers>
+      <member refid="classLM35_1_1LM35IC_1aef5156639598e365cef137baf5f388ea" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_adc_accuracy</name></member>
+      <member refid="classLM35_1_1LM35IC_1a7f17c16c63734fe41ea1b049741ad946" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_adc_res</name></member>
+      <member refid="classLM35_1_1LM35IC_1ad7ad8e483de443eb65e877aa5dd08831" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_computeResolution</name></member>
+      <member refid="classLM35_1_1LM35IC_1a15b7522682a6bdff6f0cf368ad65910c" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_gain</name></member>
+      <member refid="classLM35_1_1LM35IC_1afed510476ed4159d0df50987c1545e66" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_intercept_indices</name></member>
+      <member refid="classLM35_1_1LM35IC_1abc87dd6ab571b784ded310e85fabb6c7" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_n_details</name></member>
+      <member refid="classLM35_1_1LM35IC_1a0766e5940a85ae3036c450e25a80e67c" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_n_sensors</name></member>
+      <member refid="classLM35_1_1LM35IC_1a09a9f60398746d0e797b48d9a55f788b" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_offset</name></member>
+      <member refid="classLM35_1_1LM35IC_1a706f3fb53173f7f9c9b1dc62016c0be9" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_pin</name></member>
+      <member refid="classLM35_1_1LM35IC_1a58d15000b7a0f85c729095392f3a3044" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_reference_temperature</name></member>
+      <member refid="classLM35_1_1LM35IC_1a8d90060699b36b9a141ea704994b0b80" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_resolution</name></member>
+      <member refid="classLM35_1_1LM35IC_1ab33f7e9c7e506b7cc10b90264d8ef7f3" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_sensitivity</name></member>
+      <member refid="classLM35_1_1LM35IC_1a743f4480af6c90dcc7cfb3058c45c99a" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_sensor</name></member>
+      <member refid="classLM35_1_1LM35IC_1abbb70b45d19e9c93260a6b2c7a252499" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_sensors</name></member>
+      <member refid="classLM35_1_1LM35IC_1ac4d31569dd56b771034a23c8c44ecdc3" prot="private" virt="non-virtual"><scope>LM35::LM35IC</scope><name>_slope_indices</name></member>
+      <member refid="classLM35_1_1LM35IC_1a2e1c80f4817af6bedc2033830eb25079" prot="public" virt="non-virtual"><scope>LM35::LM35IC</scope><name>Celsius2Fahrenheit</name></member>
+      <member refid="classLM35_1_1LM35IC_1a7c5211f064191d921b2ebbf497baea52" prot="public" virt="non-virtual"><scope>LM35::LM35IC</scope><name>Celsius2Kelvin</name></member>
+      <member refid="classLM35_1_1LM35IC_1a14bc1f1c47209e3e4d94d25c1932c7ff" prot="public" virt="non-virtual"><scope>LM35::LM35IC</scope><name>computeAccuracy</name></member>
+      <member refid="classLM35_1_1LM35IC_1abe5bcf103bfcd36c76dea3902c5ca469" prot="public" virt="non-virtual"><scope>LM35::LM35IC</scope><name>computeError</name></member>
+      <member refid="classLM35_1_1LM35IC_1ae4c30dd730ef442fdb634619b75013e8" prot="public" virt="non-virtual"><scope>LM35::LM35IC</scope><name>getResolution</name></member>
+      <member refid="classLM35_1_1LM35IC_1a0d6bbe01a9ffb88a781b8cb8e27d169e" prot="public" virt="non-virtual"><scope>LM35::LM35IC</scope><name>LM35IC</name></member>
+      <member refid="classLM35_1_1LM35IC_1a4c9ae906752de04dfc0d9f53355c54f1" prot="public" virt="non-virtual"><scope>LM35::LM35IC</scope><name>readTemp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
